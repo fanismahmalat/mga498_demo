@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Unity WebGL Player | Labyrinth_FanisMahmalat</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <!-- <link rel="stylesheet" href="TemplateData/style.css" /> -->
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate(
+        'unityContainer',
+        'Build/webexport.json',
+        { onProgress: UnityProgress }
+      );
+    </script>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .webgl-content {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #unityContainer {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+      }
+
+      canvas {
+        cursor: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer"></div>
+    </div>
+  </body>
+</html>
